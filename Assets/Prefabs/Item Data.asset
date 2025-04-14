@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaabd120c7fc6f84ea55dfa609622cd5, type: 3}
+  m_Name: Item Data
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: 1
+  <localizedName>k__BackingField:
+  - value: Test
+    language: 0
+  - value: "\u0422\u0435\u0441\u0442"
+    language: 1
+  <localizedDescription>k__BackingField:
+  - value: HnnXdSbQZX oOwbWsmKyw CjSAhvxdEU ofPRiIZYIH KUHRrRoqes xSuwphpEqu lIYczEpTlF
+      XgtIBHDebi vogQNKRyAW AGAKFOgGua PskDaPWWJZ BcBcGGvFND HDKxLhcpHD rzftsbVMiy
+      iHPbcTPVJJ ehmtbvtUWj TDiMQTIPvK tsLhtAZfiC FjNzofojpN NnuXRGicyo URBHVhNizm
+      sPoJHoceuw iJNPGyhZqF ZQdZTDKBQh gWjHCEQZTN TnvVJEZWem xoIcASycYp umsYgfLeLb
+      CCTrowugyB CVwhfUDtbb dGDWORIoMV uCsqSywaWA liVZMDIZjb NijvbRkoAa QkyReldGhD
+      vOwEEyYIUq skreUASyqZ gUrNsUfRjH ywIUCoEVEK HtxpZZOMNU nwwAjKsLTw VGtKKTXUpc
+      nKRzsIUowl cJirsphHeP tcfPDQGJNV JIEOKUCSEq pdPzwSXHsz cMilQUZrEz MdWlitLVBh
+      MsjvaJrGLR NgeyqemNDL CFyDlcXpjj cgDsPAwSTQ aYIrKzoyUg cejsdpftnl GBTxpnVfhO
+      LvodHmkhzz qXJxflWOwp bHSEJZwcYb ClJSoytKqi GQkMVGLfKL GNuFKZxkyb uwgddHUJta
+      yhEuyjSMvD dzYtrEgfRH IbbaMOhQyq bJuCeVENqi WfoldHHxjG PQIwkxeZFJ cpfyZKwnwc
+      hHmQmYyaMC KEBZZtauvN oORuoUGSPR lcaUDaoopO rnWSiNlZKj DerMNHNybV BzxNOyfadf
+      NSmEZMynWF xTCvSvaDJM BofTXmxThs XFAiBgOgyX zGKDwBnTSO tWvquwTteI sEqadXCRde
+      nbFGGIObhD cnABtCqujM NZybeaIKpl qUHMogdnOX RCiUFYXbNt UnFiwDoTfx mHacOcVfJs
+      VCNpIMfSFr jcAFpwiOaE EMvLmQKbuX HghciTWbOs BIAPhqhAoK CPrEsjDgwE eaUVjxVtjp
+      iFeiElQhzB FwMbZeFRrt ZgumiXUSXg mdLFhPpEOE sPsPDdOieq HjgKzoAWRU WrGiOcjlWk
+      VSgaWTEmKo ulrGwmrWHI utnKpfqNGS aoNMbvvdvF wFmziHMVMN loSYujwOGH gjsqrQGczM
+      PKwHtFFWCX OaSyuKIdph DtzpiOLtVo JVQBaseEaF PhoJMZMrNo qgDEIIzZCt wWUTPIHRif
+      YYHDWRJbQO AFaIOOkFhJ ztvHpDwGec NEtchtGQDU spgLuwYsKD nXBbGtjwnP qoSUrcfVsH
+      KYgZVjoynR spTeYPCfUR qOOaWqRlRt ETAwMNNvBX EJHWTjJQFy VbScmbiUOa BzlTjHTZtE
+      phujlTPCvR joPICPRPbM SxetvdhOOT XiRbSZetim DzbXdpEtTi kRonSaiHdG aUGDVkfWGU
+      FZUDYeePKp VoLKdcHVIn oOGIdgvoJp EmekxYsXqw tniqYlozaN lvccxoJRQI SXIOtBoKkW
+      LWyLDmNrdB nhPfDvDcFf oZRrROuWcT BKkZDMhaJX sjSmEaJYsE SjERkBdTSB LlYOJqqzly
+      EnfKfrAMwl qVXaSpxPJY iAxVaEnxFm XsMoaYYEPN tuJSwOetUh GaYIQJitwK EnyxlMyXhE
+      updUVFAhSG DgIJeHBoIi mYqRXzmWvJ ApYeyOcaWE WhkEiRZKhQ rrtYTiYdRz DLJGkKvpXt
+      lmpInJOZSj LRdaFVlFNi BTCnwXJDvk brdDDJscfM caInKdsBtt bGwQtypqoD uxxmcEGzZh
+      AXEufRadqU iGEsfuKBnG FavDyaFgFI yDrgjolnAS faEdRecVHY SqmuFWqAUk jqfGACnpqK
+      anjqFYCaZD iaZyrFMUMM EEdADZjCnM UdiOYFsIxS SVHtBtUyaG qCKbpViiqS bawSdBISPR
+      WWmWNFnwsT efDnNXiNJY QXlBxViJYR KsHOhFpqPz nEusEPtJXH TiwyWVZoUl UthtUCLRYU
+      WGYQzroeaE zdYKDkTUPc CgyzrcrbUr YUxifJFkBq
+    language: 0
+  - value: HnnXdSbQZX oOwbWsmKyw CjSAhvxdEU ofPRiIZYIH KUHRrRoqes xSuwphpEqu lIYczEpTlF
+      XgtIBHDebi vogQNKRyAW AGAKFOgGua PskDaPWWJZ BcBcGGvFND HDKxLhcpHD rzftsbVMiy
+      iHPbcTPVJJ ehmtbvtUWj TDiMQTIPvK tsLhtAZfiC FjNzofojpN NnuXRGicyo URBHVhNizm
+      sPoJHoceuw iJNPGyhZqF ZQdZTDKBQh gWjHCEQZTN TnvVJEZWem xoIcASycYp umsYgfLeLb
+      CCTrowugyB CVwhfUDtbb dGDWORIoMV uCsqSywaWA liVZMDIZjb NijvbRkoAa QkyReldGhD
+      vOwEEyYIUq skreUASyqZ gUrNsUfRjH ywIUCoEVEK HtxpZZOMNU nwwAjKsLTw VGtKKTXUpc
+      nKRzsIUowl cJirsphHeP tcfPDQGJNV JIEOKUCSEq pdPzwSXHsz cMilQUZrEz MdWlitLVBh
+      MsjvaJrGLR NgeyqemNDL CFyDlcXpjj cgDsPAwSTQ aYIrKzoyUg cejsdpftnl GBTxpnVfhO
+      LvodHmkhzz qXJxflWOwp bHSEJZwcYb ClJSoytKqi GQkMVGLfKL GNuFKZxkyb uwgddHUJta
+      yhEuyjSMvD dzYtrEgfRH IbbaMOhQyq bJuCeVENqi WfoldHHxjG PQIwkxeZFJ cpfyZKwnwc
+      hHmQmYyaMC KEBZZtauvN oORuoUGSPR lcaUDaoopO rnWSiNlZKj DerMNHNybV BzxNOyfadf
+      NSmEZMynWF xTCvSvaDJM BofTXmxThs XFAiBgOgyX zGKDwBnTSO tWvquwTteI sEqadXCRde
+      nbFGGIObhD cnABtCqujM NZybeaIKpl qUHMogdnOX RCiUFYXbNt UnFiwDoTfx mHacOcVfJs
+      VCNpIMfSFr jcAFpwiOaE EMvLmQKbuX HghciTWbOs BIAPhqhAoK CPrEsjDgwE eaUVjxVtjp
+      iFeiElQhzB FwMbZeFRrt ZgumiXUSXg mdLFhPpEOE sPsPDdOieq HjgKzoAWRU WrGiOcjlWk
+      VSgaWTEmKo ulrGwmrWHI utnKpfqNGS aoNMbvvdvF wFmziHMVMN loSYujwOGH gjsqrQGczM
+      PKwHtFFWCX OaSyuKIdph DtzpiOLtVo JVQBaseEaF PhoJMZMrNo qgDEIIzZCt wWUTPIHRif
+      YYHDWRJbQO AFaIOOkFhJ ztvHpDwGec NEtchtGQDU spgLuwYsKD nXBbGtjwnP qoSUrcfVsH
+      KYgZVjoynR spTeYPCfUR qOOaWqRlRt ETAwMNNvBX EJHWTjJQFy VbScmbiUOa BzlTjHTZtE
+      phujlTPCvR joPICPRPbM SxetvdhOOT XiRbSZetim DzbXdpEtTi kRonSaiHdG aUGDVkfWGU
+      FZUDYeePKp VoLKdcHVIn oOGIdgvoJp EmekxYsXqw tniqYlozaN lvccxoJRQI SXIOtBoKkW
+      LWyLDmNrdB nhPfDvDcFf oZRrROuWcT BKkZDMhaJX sjSmEaJYsE SjERkBdTSB LlYOJqqzly
+      EnfKfrAMwl qVXaSpxPJY iAxVaEnxFm XsMoaYYEPN tuJSwOetUh GaYIQJitwK EnyxlMyXhE
+      updUVFAhSG DgIJeHBoIi mYqRXzmWvJ ApYeyOcaWE WhkEiRZKhQ rrtYTiYdRz DLJGkKvpXt
+      lmpInJOZSj LRdaFVlFNi BTCnwXJDvk brdDDJscfM caInKdsBtt bGwQtypqoD uxxmcEGzZh
+      AXEufRadqU iGEsfuKBnG FavDyaFgFI yDrgjolnAS faEdRecVHY SqmuFWqAUk jqfGACnpqK
+      anjqFYCaZD iaZyrFMUMM EEdADZjCnM UdiOYFsIxS SVHtBtUyaG qCKbpViiqS bawSdBISPR
+      WWmWNFnwsT efDnNXiNJY QXlBxViJYR KsHOhFpqPz nEusEPtJXH TiwyWVZoUl UthtUCLRYU
+      WGYQzroeaE zdYKDkTUPc CgyzrcrbUr YUxifJFkBq
+    language: 1
+  <maxStackCount>k__BackingField: 64
+  <weight>k__BackingField: 2
+  <type>k__BackingField: 0
+  <maxDurability>k__BackingField: 100
+  <isStackable>k__BackingField: 1
+  <isFlammable>k__BackingField: 0
