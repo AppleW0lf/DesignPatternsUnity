@@ -15,60 +15,62 @@ namespace Assets.Scripts.MVVM_Test2.MVVM
     public class PerformanceTest : MonoBehaviour
     {
         public int numberOfTargets = 100;
-        public int numberOfIterations = 1000; // Большое количество итераций
+        public int numberOfIterations = 1000;
         public GameObject targetPrefab;
         public GameObject playerPrefab;
         public Transform playerSpawnPoint;
+        public bool useMVVM = false;
 
         // Spaghetti Code
         public GameObject spaghettiGameManagerPrefab;
 
         private GameManager spaghettiGameManager;
-        private PlayerController spaghettiPlayerController; // Не используется, но нужна для GameObjects
+        private PlayerController spaghettiPlayerController;
         private GameObject[] spaghettiTargets;
 
         // MVVM
         public GameObject mvvmGameViewPrefab;
 
         private GameView mvvmGameView;
-        private PlayerView mvvmPlayerView; // Не используется, но нужна для GameObjects
+        private PlayerView mvvmPlayerView;
 
         private void Start()
         {
-            // Инициализация Spaghetti Code
-            spaghettiGameManager = Instantiate(spaghettiGameManagerPrefab).GetComponent<GameManager>();
-            spaghettiGameManager.playerPrefab = playerPrefab;
-            spaghettiGameManager.playerSpawnPoint = playerSpawnPoint;
-            spaghettiGameManager.targetPrefab = targetPrefab;
-            spaghettiGameManager.numberOfTargets = numberOfTargets;
-            spaghettiPlayerController = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity).GetComponent<PlayerController>();
-
-            playerSpawnPoint.position = new Vector3(0, 0, 0);
-            spaghettiGameManager.scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
-
-            spaghettiTargets = new GameObject[numberOfTargets];
-            for (int i = 0; i < numberOfTargets; i++)
+            if (useMVVM)
             {
-                Vector2 randomPosition = new Vector2(Random.Range(-8f, 8f), Random.Range(-4f, 4f));
-                spaghettiTargets[i] = Instantiate(targetPrefab, randomPosition, Quaternion.identity);
-                spaghettiTargets[i].SetActive(false); // Деактивируем цели, т.к. не собираем
+                mvvmGameView = Instantiate(mvvmGameViewPrefab).GetComponent<GameView>();
+                mvvmGameView.playerPrefab = playerPrefab;
+                mvvmGameView.playerSpawnPoint = playerSpawnPoint;
+                mvvmGameView.targetPrefab = targetPrefab;
+                mvvmGameView.numberOfTargets = numberOfTargets;
+                mvvmGameView.scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
+                mvvmPlayerView = FindFirstObjectByType<PlayerView>();
+                TestMVVM();
+            }
+            else
+            {
+                spaghettiGameManager = Instantiate(spaghettiGameManagerPrefab).GetComponent<GameManager>();
+                spaghettiGameManager.playerPrefab = playerPrefab;
+                spaghettiGameManager.playerSpawnPoint = playerSpawnPoint;
+                spaghettiGameManager.targetPrefab = targetPrefab;
+                spaghettiGameManager.numberOfTargets = numberOfTargets;
+                spaghettiPlayerController = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity).GetComponent<PlayerController>();
+
+                playerSpawnPoint.position = new Vector3(0, 0, 0);
+                spaghettiGameManager.scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
+
+                spaghettiTargets = new GameObject[numberOfTargets];
+                for (int i = 0; i < numberOfTargets; i++)
+                {
+                    Vector2 randomPosition = new Vector2(Random.Range(-8f, 8f), Random.Range(-4f, 4f));
+                    spaghettiTargets[i] = Instantiate(targetPrefab, randomPosition, Quaternion.identity);
+                    spaghettiTargets[i].SetActive(false); // Деактивируем цели, т.к. не собираем
+                }
+                TestSpaghettiCode();
             }
 
-            // Инициализация MVVM
-            mvvmGameView = Instantiate(mvvmGameViewPrefab).GetComponent<GameView>();
-            mvvmGameView.playerPrefab = playerPrefab;
-            mvvmGameView.playerSpawnPoint = playerSpawnPoint;
-            mvvmGameView.targetPrefab = targetPrefab;
-            mvvmGameView.numberOfTargets = numberOfTargets;
-            mvvmGameView.scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
-            mvvmPlayerView = FindFirstObjectByType<PlayerView>();
-
-            // Тестирование
-            TestSpaghettiCode();
-            TestMVVM();
-
             // Очистка сцены
-            DestroyImmediate(spaghettiGameManager.gameObject);
+            /*DestroyImmediate(spaghettiGameManager.gameObject);
             DestroyImmediate(mvvmGameView.gameObject);
 
             foreach (var target in spaghettiTargets)
@@ -82,7 +84,7 @@ namespace Assets.Scripts.MVVM_Test2.MVVM
             {
                 DestroyImmediate(target);
             }
-            Debug.Log("Tests Complete");
+            Debug.Log("Tests Complete");*/
         }
 
         private void TestSpaghettiCode()

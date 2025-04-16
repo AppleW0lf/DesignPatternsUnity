@@ -59,14 +59,12 @@ public class ChaosController : MonoBehaviour
 
     private void SpawnEnemies()
     {
-        //float start = Time.realtimeSinceStartup;
-        for (int i = 0; i < 500; i++)
+        for (int i = 0; i < 100; i++)
         {
             var enemy = Instantiate(_enemyPrefab);
             enemy.GetComponent<EnemyChaos>().controller = this;
-            EnemyKilled(enemy);
+            //EnemyKilled(enemy);
         }
-        //Debug.Log($"Chaos: {Time.realtimeSinceStartup - start}");
     }
 
     public void EnemyKilled(GameObject enemy)

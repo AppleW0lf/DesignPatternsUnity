@@ -74,11 +74,6 @@ namespace Assets.Scripts.ECS.LeoECS
             float currentFPS = 1.0f / Time.deltaTime;
         }
 
-        private void FixedUpdate()
-        {
-            // Move long-term calculations to FixedUpdate
-        }
-
         private void UpdateGCTracking()
         {
             int newGCCount = GC.CollectionCount(0);
@@ -162,7 +157,7 @@ namespace Assets.Scripts.ECS.LeoECS
                          $"Peak Allocated: {report.peakAllocatedMB} MB\n" +
                          $"Peak Mono: {report.peakMonoMB} MB";
 
-            Debug.Log(log);
+            Debug.LogWarning(log);
         }
 
         private void LogLongTermStats()
@@ -177,7 +172,7 @@ namespace Assets.Scripts.ECS.LeoECS
                           $"Current Mono Heap: {monoMB} MB\n" +
                           $"Total GC Events: {_gcReports.Count}";
 
-            Debug.Log(stats);
+            Debug.LogWarning(stats);
         }
 
         private void OnDisable()

@@ -51,7 +51,7 @@ namespace Assets.Scripts.MVP_Test2.MVP
         private void SpawnEnemies()
         {
             //float start = Time.realtimeSinceStartup;
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 100; i++)
             {
                 var enemy = Instantiate(_enemyPrefab);
                 var enemyModel = new EnemyModel();
