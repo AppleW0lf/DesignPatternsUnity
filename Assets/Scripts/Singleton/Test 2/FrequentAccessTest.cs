@@ -6,14 +6,15 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Profiling;
 using Debug = UnityEngine.Debug;
 
 namespace Assets.Scripts.Singleton.Test_2
 {
     public class FrequentAccessTest : MonoBehaviour
     {
-        public int numberOfObjects = 100;
-        public int numberOfFrames = 100;
+        public int numberOfObjects = 1000;
+        public int numberOfFrames = 500;
         public bool useSingleton = true;
         public GameObject testObjectPrefab;
         private Stopwatch stopwatch = new Stopwatch();
@@ -33,19 +34,18 @@ namespace Assets.Scripts.Singleton.Test_2
                 stopwatch.Start();
                 for (int i = 0; i < numberOfObjects; i++)
                 {
-                    testObjects[i].dataProvider = GlobalDataManager.Instance; // Доступ через Singleton
+                    testObjects[i].dataProvider = GlobalDataManager.Instance;
                 }
             }
             else
             {
                 stopwatch.Start();
-                // Создаем обычный объект для передачи данных
                 GameObject dataObject = new GameObject("RegularDataManager");
                 GlobalDataManagerRegular regularDataManager = dataObject.AddComponent<GlobalDataManagerRegular>();
 
                 for (int i = 0; i < numberOfObjects; i++)
                 {
-                    testObjects[i].dataProvider = regularDataManager; // Доступ через обычный объект
+                    testObjects[i].dataProvider = regularDataManager;
                 }
             }
         }
@@ -60,6 +60,8 @@ namespace Assets.Scripts.Singleton.Test_2
             if (numberOfFrames > 0)
             {
                 numberOfFrames--;
+
+                long memoryBefore = Profiler.GetTotalAllocatedMemoryLong();
 
                 for (int i = 0; i < numberOfObjects; i++)
                 {

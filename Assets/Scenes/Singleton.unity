@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1817e91c5539dbc4587ab8c276a82144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  someData: 42
+  dataSize: 1000
 --- !u!4 &43758625
 Transform:
   m_ObjectHideFlags: 0
@@ -156,52 +156,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43758623}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &367623769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 367623771}
-  - component: {fileID: 367623770}
-  m_Layer: 0
-  m_Name: ObjectCreation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &367623770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367623769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ace608c4a5d4e479ebf6131587bc3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfObjects: 1000
-  useSingleton: 1
---- !u!4 &367623771
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367623769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -376,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9569111b1845c4ca1fe06a7c14e974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  someData: 42
+  dataSize: 1000
 --- !u!4 &869668376
 Transform:
   m_ObjectHideFlags: 0
@@ -422,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd470b8fbd007744ea5cd94894093222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _longTermInterval: 30
+  _longTermInterval: 5
 --- !u!114 &1792026744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,9 +389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18de732729e2a3479f65a040891a256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfObjects: 1000
+  numberOfObjects: 500
   numberOfFrames: 100
-  useSingleton: 1
+  useSingleton: 0
   testObjectPrefab: {fileID: 5504105227616663959, guid: f8028ab17bc3878498a347ca31839747, type: 3}
 --- !u!4 &1792026745
 Transform:
@@ -461,5 +415,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1792026745}
   - {fileID: 43758625}
-  - {fileID: 367623771}
   - {fileID: 869668376}

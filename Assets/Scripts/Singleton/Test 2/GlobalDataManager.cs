@@ -21,16 +21,28 @@ namespace Assets.Scripts.Singleton.Test_2
                     _instance = go.AddComponent<GlobalDataManager>();
                     go.name = _instance.GetType().Name;
                     //DontDestroyOnLoad(go);
+                    _instance.InitializeData();
                 }
                 return _instance;
             }
         }
 
-        public int someData = 42;
+        public List<MyComplexData> complexDataList = new List<MyComplexData>();
 
-        public int GetData()
+        public int dataSize = 1000;
+
+        private void InitializeData()
         {
-            return someData;
+            complexDataList = new List<MyComplexData>(dataSize);
+            for (int i = 0; i < dataSize; i++)
+            {
+                complexDataList.Add(new MyComplexData());
+            }
+        }
+
+        public List<MyComplexData> GetData()
+        {
+            return complexDataList;
         }
     }
 }
